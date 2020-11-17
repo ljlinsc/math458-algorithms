@@ -14,4 +14,6 @@ This repo contains MATLAB algorithms for USC MATH 458 Numerical Methods with cre
 
 ### Chapter 6
 * **Solving Least Squares using Normal Equations** given a full column rank matrix A and a vector b using `least_sq_by_normal_eqs(A,b)`
+* **Reduced Gram-Schmidt Orthogonalization** given a matrix A using `reduced_gram_schmidt_orthogonalization(A)`
+* **Full Gram-Schmidt Orthogonalization** given a matrix A using `gram_schmidt_orthogonalization(A)`
 * **Solving Least Squares using QR Decomposition** given a full column rank matrix A and a vector b using `least_sq_by_qr(A,b)`
