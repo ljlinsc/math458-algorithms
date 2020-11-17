@@ -17,3 +17,7 @@ This repo contains MATLAB algorithms for USC MATH 458 Numerical Methods with cre
 * **Reduced Gram-Schmidt Orthogonalization** given a matrix A using `reduced_gram_schmidt_orthogonalization(A)`
 * **Full Gram-Schmidt Orthogonalization** given a matrix A using `gram_schmidt_orthogonalization(A)`
 * **Solving Least Squares using QR Decomposition** given a full column rank matrix A and a vector b using `least_sq_by_qr(A,b)`
+
+### Chapter 7
+* **Solving Ax=b with Jacobi Method** given a matrix A, vector b, initial guess x0, and absolute tolerance atol using `jacobi_method(A,b,x0,atol)`
+* **Solving Ax=b with Gauss-Seidel Method** given a matrix A, vector b, initial guess x0, and absolute tolerance atol using `gauss_seidel_method(A,b,x0,atol)`
