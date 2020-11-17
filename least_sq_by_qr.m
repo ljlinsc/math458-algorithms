@@ -1,4 +1,4 @@
-% Solves the least squares problem using QR decomposition.
+% Solves the least squares problem using reduced QR decomposition.
 % 
 % @param {A} mxn, full column rank matrix
 % @param {b} real vector in Rm
@@ -6,7 +6,7 @@
 function [x] = least_sq_by_qr(A,b)
     disp('---Solving least squares by QR Decomposition---');
     n = size(A,2);
-    [Q,T] = qr(A);
+    [Q,T] = reduced_gram_schmidt_orthogonalization(A);
     R = T(1:n,1:n);
     c = transpose(Q) * b;
     x = backward_substitution(R,c);
