@@ -1,0 +1,23 @@
+% Solves the least squares problem using normal equations.
+% 
+% @param {A} mxn, full column rank matrix
+% @param {b} real vector in Rm
+% @returns {x} solution vector in Rn
+function [x] = least_sq_by_normal_eqs(A,b)
+    disp('---Solving least squares by Normal Equations---');
+    B = transpose(A) * A;
+    y = transpose(A) * b;
+    disp('B');
+    disp(B);
+    disp('y');
+    disp(y);
+    G = cholesky_factorization(B);
+    disp('G');
+    disp(G);
+    
+    [L,U] = lu_decomposition(A);
+    y = forward_substitution(L,b);
+    x = backward_substitution(U,y);
+    disp('Solving least squares by Normal Equations Result:');
+    disp(x);
+end
