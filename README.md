@@ -24,3 +24,8 @@ This repo contains MATLAB algorithms for USC MATH 458 Numerical Methods with cre
 * **Solving Ax=b with Gauss-Seidel Method with Successive Over-Relaxation** given a matrix A, vector b, initial guess x0, relaxation parameter w, and absolute tolerance atol using `gauss_seidel_method(A,b,x0,w,atol)`
 * **Solving Ax=b with the Method of Steepest Descent** given a matrix A, vector b, initial guess x0, and absolute tolerance atol using `method_of_steepest_descent(A,b,x0,atol)`
 * **Solving Ax=b with the Conjugate Gradient Method** given a matrix A, vector b, initial guess x0, and absolute tolerance atol using `conjugate_gradient_method(A,b,x0,atol)`
+
+### Chapter 8
+* **Finding eigenvalues with the Power Method** given a matrix A, initial guess x0, and absolute tolerance atol using `power_method(A,x0,atol)`
+* **Finding eigenvalues with Inverse Iteration using a shift alpha** given a matrix A, shift alpha, initial guess x0, and absolute value atol using `inverse_iteration(A,alpha,x0,atol)`
+* **Finding eigenvalues with Rayleigh Quotient Iteration** given a matrix A, initial guess x0, and absolute tolerance atol using `rayleigh_quotient_iteration(A,x0,atol)`
